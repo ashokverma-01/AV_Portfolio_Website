@@ -6,7 +6,7 @@
   "type": "module",
  "scripts": {
   "dev": "nodemon backend/server.js",
-  "build": "cd portfolio && npm install && npm run build",
+  "build": "npm install && cd portfolio && npm install && npm run build && cd .. && npm install --prefix backend",
   "start": "node backend/server.js"
 }
 ,

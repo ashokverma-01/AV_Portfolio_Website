@@ -42,6 +42,10 @@ app.use(express.static(path.join(__dirname, "portfolio", "dist")));
 
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "portfolio", "dist", "index.html"));
+  console.log(
+    "Serving:",
+    path.resolve(__dirname, "portfolio", "dist", "index.html")
+  );
 });
 
 dbConnection();
