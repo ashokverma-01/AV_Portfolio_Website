@@ -38,9 +38,10 @@ app.use("/api/v1/skill", skillRouter);
 app.use("/api/v1/softwareapplication", softwareApplicationRouter);
 app.use("/api/v1/project", projectRouter);
 
-app.use(express.static(path.join(_dirname, "/portfolio/dist")));
-app.get("*", (_, res) => {
-  res.sendFile(path.resolve(_dirname, "portfolio", "dist", "index.html"));
+app.use(express.static(path.join(__dirname, "portfolio", "dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "portfolio", "dist", "index.html"));
 });
 
 dbConnection();

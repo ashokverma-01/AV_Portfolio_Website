@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "dev":"nodemon backend/server.js",
-    "build":"npm install && npm install --prefix portfolio && npm run build --prefix portfolio",
-    "start":"nodemon backend/server.js"
-  },
+ "scripts": {
+  "dev": "nodemon backend/server.js",
+  "build": "cd portfolio && npm install && npm run build",
+  "start": "node backend/server.js"
+}
+,
   "author": "",
   "license": "ISC",
   "dependencies": {
