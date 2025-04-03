@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "type": "module",
- "scripts": {
-  "dev": "nodemon backend/server.js",
-  "build": "npm install && cd portfolio && npm install && npm run build && cd .. && npm install --prefix backend",
-  "start": "node backend/server.js"
-}
-,
+  "scripts": {
+    "dev": "nodemon backend/server.js",
+    "build": "npm install && cd portfolio && npm install && npm run build && cd .. && npm install --prefix backend",
+    "start": "node backend/server.js"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "backend": "file:..",
     "bcrypt": "^5.1.1",
     "cloudinary": "^2.2.0",
     "cookie-parser": "^1.4.6",
