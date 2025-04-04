@@ -18,7 +18,7 @@ function App() {
           <Route path="/project/:id" element={<ProjectView />} />
         </Routes>
         <Footer />
-        <ToastContainer position="bottom-right" theme="dark" />
+        <ToastContainer position="top-right" theme="dark" />
       </Router>
     </ThemeProvider>
   );
