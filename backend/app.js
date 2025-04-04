@@ -21,7 +21,10 @@ const __dirname = path.dirname(__filename);
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5174"], // Hardcoded for testing
+    origin: [
+      "http://localhost:5173",
+      "https://av-portfolio-website.onrender.com/",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })

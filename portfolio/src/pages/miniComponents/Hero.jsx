@@ -21,7 +21,7 @@ const Hero = () => {
     const getMyProfile = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5200/api/v1/user/portfolio/me",
+          "https://av-portfolio-website.onrender.com/api/v1/user/portfolio/me",
           { withCredentials: true }
         );
 
