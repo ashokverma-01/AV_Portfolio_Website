@@ -33,7 +33,7 @@ const About = () => {
           <div className="flex justify-center flex-col tracking-[1px] text-xl gap-5">
             <p>
               My name is Ashok Verma, but my followers call me AV. I will
-              graduate in Software Engineering from SMIU around 2024. I work as
+              graduate in Software Engineering from JICS around 2022. I work as
               a web developer and freelancer. My hobbies include watching
               movies, series, playing video games, and occasionally cooking.
             </p>
